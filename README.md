@@ -72,3 +72,8 @@ This project also served as a fun way to explore pure HTML/CSS/JS development, a
 - Modular code structure for easier maintenance
 If you have ideas or feedback, feel free to open an issue or fork the project!
 
+## Live Demo
+
+**Try it out directly in your browser:**
+
+[Timetracker alkalmazás – GitHub Pages](https://normand-ux.github.io/timetracker/)
