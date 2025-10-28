@@ -2,11 +2,6 @@
 
 A simple, browser-based time tracking tool designed for freelancers and professionals to log working hours across multiple projects. The app uses the browser's `localStorage` to persist data, so your entries remain intact even after closing the browser.
 
-## Live Demo
-
-Try it out directly in your browser:  
-[https://normand-ux.github.io/timetracker/](https://normand-ux.github.io/timetracker/)
-
 ## Features
 
 - **Time Measurement**  
@@ -58,3 +53,22 @@ To set your hourly rate, edit the following line in `script.js`:
 
 ```javascript
 const HOURLY_RATE = 15000; // HUF/hour
+
+## Why I Built This
+As a developer and consultant working with freelancers and small businesses, I often noticed how time tracking tools are either too complex or locked behind subscriptions. I wanted to create a lightweight, browser-based solution that’s easy to use, requires no login, and stores data locally — perfect for quick tracking without distractions.
+This project also served as a fun way to explore pure HTML/CSS/JS development, and to experiment with user-friendly UI and localStorage-based persistence.
+
+## Future Plans
+I’m considering expanding the app with:
+• 	Optional password protection or export/import features
+• 	Visual charts for time distribution across projects
+• 	Multi-language support (Hungarian and English)
+• 	Data export to CSV or JSON
+• 	Mobile-first UI improvements
+• 	Modular code structure for easier maintenance
+If you have ideas or feedback, feel free to open an issue or fork the project!
+
+## Live Demo
+
+Try it out directly in your browser:  
+[https://normand-ux.github.io/timetracker/](https://normand-ux.github.io/timetracker/)
