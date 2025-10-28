@@ -1,0 +1,332 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f2f7; /* Light blue background */
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 650px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #2c3e50; /* Darker blue for heading */
+    margin-bottom: 25px;
+    font-size: 2.2em;
+}
+
+.project-section,
+.timer-section,
+.log-section,
+.summary-section {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f8fcfd; /* Slightly off-white for sections */
+    border-radius: 8px;
+    border: 1px solid #eef5f7;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+#project-name {
+    width: calc(100% - 24px); /* Adjust for padding and border */
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #cce7ee;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#timer {
+    font-size: 3.8em;
+    margin: 25px 0;
+    color: #007bff; /* Primary blue for timer */
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.buttons button {
+    background-color: #007bff; /* Primary blue */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.05em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#start-stop-btn {
+    background-color: #28a745; /* Green for Start */
+    box-shadow: 0 2px 5px rgba(40, 167, 69, 0.2);
+}
+
+#start-stop-btn:hover {
+    background-color: #218838;
+}
+
+#start-stop-btn[style*="background-color: rgb(255, 193, 7)"] { /* Yellow for Stop */
+    background-color: #ffc107 !important;
+    box-shadow: 0 2px 5px rgba(255, 193, 7, 0.2);
+    color: #333;
+}
+
+#start-stop-btn[style*="background-color: rgb(255, 193, 7)"]:hover {
+    background-color: #e0a800 !important;
+}
+
+#reset-btn {
+    background-color: #dc3545; /* Red for Reset */
+    box-shadow: 0 2px 5px rgba(220, 53, 69, 0.2);
+}
+
+#reset-btn:hover {
+    background-color: #c82333;
+}
+
+#pause-btn {
+    background-color: #6c757d; /* Grey when disabled */
+    box-shadow: 0 2px 5px rgba(108, 117, 125, 0.2);
+}
+
+#pause-btn:disabled {
+    background-color: #6c757d !important;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#pause-btn:not(:disabled):hover {
+    transform: translateY(-2px);
+}
+
+#pause-btn[style*="background-color: rgb(23, 162, 184)"] { /* Cyan for Pause */
+    background-color: #17a2b8 !important;
+    box-shadow: 0 2px 5px rgba(23, 162, 184, 0.2);
+}
+
+#pause-btn[style*="background-color: rgb(23, 162, 184)"]:hover {
+    background-color: #138496 !important;
+}
+
+#pause-btn[style*="background-color: rgb(40, 167, 69)"] { /* Green for Resume */
+    background-color: #28a745 !important;
+    box-shadow: 0 2px 5px rgba(40, 167, 69, 0.2);
+}
+
+#pause-btn[style*="background-color: rgb(40, 167, 69)"]:hover {
+    background-color: #218838 !important;
+}
+
+#log-list {
+    list-style: none;
+    padding: 0;
+    max-height: 250px;
+    overflow-y: auto;
+    border: 1px solid #eef5f7;
+    border-radius: 8px;
+    text-align: left;
+    background-color: #ffffff;
+    margin-top: 15px;
+}
+
+#log-list li {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eef5f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#log-list li:last-child {
+    border-bottom: none;
+}
+
+#log-list li strong {
+    color: #007bff;
+}
+
+.delete-btn,
+.edit-btn,
+.save-edit-btn,
+.cancel-edit-btn {
+    background-color: #6c757d; /* Grey for secondary actions */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(108, 117, 125, 0.2);
+    flex-shrink: 0;
+}
+
+.delete-btn:hover,
+.edit-btn:hover,
+.save-edit-btn:hover,
+.cancel-edit-btn:hover {
+    background-color: #5a6268;
+    transform: translateY(-1px);
+}
+
+.edit-btn {
+    background-color: #17a2b8; /* Info blue for Edit */
+    box-shadow: 0 2px 5px rgba(23, 162, 184, 0.2);
+}
+
+.edit-btn:hover {
+    background-color: #138496;
+}
+
+.save-edit-btn {
+    background-color: #28a745; /* Green for Save */
+    box-shadow: 0 2px 5px rgba(40, 167, 69, 0.2);
+}
+
+.save-edit-btn:hover {
+    background-color: #218838;
+}
+
+.cancel-edit-btn {
+    background-color: #dc3545; /* Red for Cancel */
+    box-shadow: 0 2px 5px rgba(220, 53, 69, 0.2);
+}
+
+.cancel-edit-btn:hover {
+    background-color: #c82333;
+}
+
+#clear-all-btn {
+    background-color: #dc3545; /* Red for Clear All */
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(220, 53, 69, 0.2);
+}
+
+#clear-all-btn:hover {
+    background-color: #c82333;
+}
+
+#summary-content {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #eef5f7;
+    border-radius: 8px;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+#summary-content p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+#summary-content strong {
+    color: #2c3e50;
+}
+
+#calculate-btn,
+#copy-summary-btn {
+    background-color: #007bff; /* Primary blue */
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+    margin-top: 15px;
+}
+
+#calculate-btn:hover,
+#copy-summary-btn:hover {
+    background-color: #0056b3;
+}
+
+#copy-summary-btn {
+    background-color: #6c757d; /* Secondary grey for Copy */
+    box-shadow: 0 2px 5px rgba(108, 117, 125, 0.2);
+}
+
+#copy-summary-btn:hover {
+    background-color: #5a6268;
+}
+
+#log-list li input[type="text"],
+#log-list li input[type="number"] {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #cce7ee;
+    border-radius: 5px;
+    width: auto;
+    font-size: 0.9em;
+    box-sizing: border-box;
+}
+
+#log-list li input[type="number"] {
+    width: 60px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #timer {
+        font-size: 3em;
+    }
+
+    .buttons button {
+        width: calc(100% - 16px);
+        margin: 5px 8px;
+    }
+
+    #pause-btn {
+        width: calc(100% - 16px);
+        margin: 5px 8px;
+    }
+
+    #log-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .delete-btn,
+    .edit-btn,
+.save-edit-btn,
+.cancel-edit-btn {
+        margin-top: 10px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #log-list li input[type="text"],
+    #log-list li input[type="number"] {
+        width: calc(100% - 10px);
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Time Tracking</h1>
+        <div class="project-section">
+            <label for="project-name">Projekt neve:</label>
+            <input type="text" id="project-name" placeholder="Projekt neve">
+        </div>
+        <div class="timer-section">
+            <div id="timer">00:00:00</div>
+            <div class="buttons">
+                <button id="start-stop-btn">Start</button>
+                <button id="pause-btn" disabled>Pause</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </div>
+        <div class="log-section">
+            <h2>Napló</h2>
+            <ul id="log-list"></ul>
+            <button id="clear-all-btn">Összes törlése</button>
+        </div>
+        <div class="summary-section">
+            <h2>Összesítés</h2>
+            <div id="summary-content"></div>
+            <button id="calculate-btn">Számol</button>
+            <button id="copy-summary-btn">Másolás</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
