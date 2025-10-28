@@ -1,4 +1,4 @@
-# Time Tracking Application
+# Time Tracking Application ⏱️
 
 A simple, browser-based time tracking tool designed for freelancers and professionals to log working hours across multiple projects. The app uses the browser's `localStorage` to persist data, so your entries remain intact even after closing the browser.
 
@@ -29,19 +29,19 @@ A simple, browser-based time tracking tool designed for freelancers and professi
 
 ## How to Use
 
-1. **Open `index.html`** in a modern browser.
+1. **Open `index.html`** in a modern browser.  
 2. **Start Tracking**  
    - Enter a project name  
-   - Click **Start** to begin timing
+   - Click **Start** to begin timing  
 3. **Manage Tracking**  
    - Use **Pause** to temporarily stop the timer. It switches to **Resume** to continue.  
    - Click **Stop** to end tracking and log the session.  
-   - Use **Reset** to clear the timer without logging.
+   - Use **Reset** to clear the timer without logging.  
 4. **Manage Logs**  
    - Each log entry includes **Edit** and **Delete** buttons  
    - Edit allows you to change the project name and duration  
    - Save or cancel changes as needed  
-   - Use **Clear All Logs** to delete all entries
+   - Use **Clear All Logs** to delete all entries  
 5. **Generate Summary**  
    - Leave the project name empty and click **Generate Summary** to view totals for all projects  
    - Enter a specific project name to filter the summary  
@@ -53,6 +53,7 @@ To set your hourly rate, edit the following line in `script.js`:
 
 ```javascript
 const HOURLY_RATE = 15000; // HUF/hour
+```
 
 ## Why I Built This
 
@@ -61,7 +62,8 @@ I wanted to create a lightweight, browser-based solution that’s easy to use, r
 This project also served as a fun way to explore pure HTML/CSS/JS development, and to experiment with user-friendly UI and localStorage-based persistence.
 
 ## Future Plans
-I’m considering expanding the app with:
+
+**I’m considering expanding the app with:**
 - Optional password protection or export/import features
 - Visual charts for time distribution across projects
 - Multi-language support (Hungarian and English)
