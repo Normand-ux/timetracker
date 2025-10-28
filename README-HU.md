@@ -2,9 +2,6 @@
 
 Ez egy egyszerű, böngészőben futó munkaidő nyilvántartó alkalmazás, amely segít a szabadúszóknak és szakembereknek a különböző projekteken eltöltött munkaórák naplózásában. Az alkalmazás a böngésző `localStorage`-ét használja az adatok tárolására, így a bejegyzések nem vesznek el a böngésző bezárása után.
 
-## Élő demó
-[Timetracker alkalmazás – GitHub Pages](https://normand-ux.github.io/timetracker/)
-
 ## Funkciók
 
 - **Időmérés**: Indítsd el, állítsd le, szüneteltesd és folytasd az időmérést egy egyszerű felületen.
@@ -60,3 +57,20 @@ const HOURLY_RATE = 15000; // Ft/óra
 - JavaScript (ES6+)
 
 Nincsenek külső függőségek, az alkalmazás önmagában futtatható.
+
+## Élő demó
+[Timetracker alkalmazás – GitHub Pages](https://normand-ux.github.io/timetracker/)
+
+## Miért készült ez az alkalmazás?
+Webfejlesztőként és tanácsadóként gyakran találkozom azzal, hogy az időkövető eszközök túl bonyolultak vagy előfizetéshez kötöttek. Ezért szerettem volna létrehozni egy egyszerű, böngészőben futó megoldást, amely nem igényel regisztrációt, és helyben tárolja az adatokat — ideális gyors, zavaró tényezőktől mentes időméréshez.
+A projekt egyben lehetőséget adott arra is, hogy tisztán HTML/CSS/JS alapon fejlesszek, és kísérletezzek a felhasználóbarát felülettel és a localStorage alapú adatkezeléssel.
+
+## Tervek a jövőre nézve
+A következő funkciók beépítését fontolgatom:
+- Opcionális jelszavas védelem vagy export/import lehetőség
+- Grafikonok a projektek közötti időeloszlás vizualizálására
+- Többnyelvű támogatás (magyar és angol)
+- Adatmentés CSV vagy JSON formátumban
+- Mobilbarát felület finomítása
+- Moduláris kódszerkezet a könnyebb karbantartás érdekében
+Ha van ötleted vagy visszajelzésed, nyugodtan nyiss egy „issue”-t vagy forkold a projektet!
