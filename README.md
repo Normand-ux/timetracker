@@ -1,4 +1,4 @@
-# Time Tracking Application ⏱️
+# Time Tracking Application
 
 A simple, browser-based time tracking tool designed for freelancers and professionals to log working hours across multiple projects. The app uses the browser's `localStorage` to persist data, so your entries remain intact even after closing the browser.
 
