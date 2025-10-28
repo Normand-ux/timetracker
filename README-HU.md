@@ -2,6 +2,9 @@
 
 Ez egy egyszerű, böngészőben futó munkaidő nyilvántartó alkalmazás, amely segít a szabadúszóknak és szakembereknek a különböző projekteken eltöltött munkaórák naplózásában. Az alkalmazás a böngésző `localStorage`-ét használja az adatok tárolására, így a bejegyzések nem vesznek el a böngésző bezárása után.
 
+## Élő demó
+[Timetracker alkalmazás – GitHub Pages](https://normand-ux.github.io/timetracker/)
+
 ## Funkciók
 
 - **Időmérés**: Indítsd el, állítsd le, szüneteltesd és folytasd az időmérést egy egyszerű felületen.
